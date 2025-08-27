@@ -1,8 +1,10 @@
-name: Java CI with Gradle (build)
+name: Java CI with Gradle (lab01)
 
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - "lab01/helloworld/**"
 
 defaults:
   run:
