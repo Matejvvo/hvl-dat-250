@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - "task01/helloworld/**"
+      - ".github/workflows/task01-gradle-demo.yml"
 
 defaults:
   run:
@@ -48,5 +49,5 @@ jobs:
       - name: Generate and submit dependency graph
         uses: gradle/actions/dependency-submission@v4
         with:
-          build-root-directory: ./task/helloworld
+          build-root-directory: ./task01/helloworld
 
